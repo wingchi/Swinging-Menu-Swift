@@ -16,11 +16,20 @@ final class ViewController: UIViewController {
 
     @IBOutlet weak var mainMenuView: UIView!
     @IBOutlet weak var submenuView: UIView!
+    @IBOutlet weak var expandButton: UIButton!
 
     var submenuExpanded = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mainMenuView.layer.shadowColor = UIColor.blackColor().CGColor
+        mainMenuView.layer.shadowOpacity = 1.0
+        mainMenuView.layer.shadowRadius = 10.0
+        
+        expandButton.layer.shadowColor = UIColor.blackColor().CGColor
+        expandButton.layer.shadowOpacity = 1.0
+        expandButton.layer.shadowRadius = 10.0
     }
     
     override func viewDidLayoutSubviews() {
