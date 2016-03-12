@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CD719111C946F2E0027EEF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD719101C946F2E0027EEF2 /* AppDelegate.swift */; };
+		0CD719131C946F2E0027EEF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD719121C946F2E0027EEF2 /* ViewController.swift */; };
+		0CD719161C946F2E0027EEF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD719141C946F2E0027EEF2 /* Main.storyboard */; };
+		0CD719181C946F2E0027EEF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD719171C946F2E0027EEF2 /* Assets.xcassets */; };
+		0CD7191B1C946F2E0027EEF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD719191C946F2E0027EEF2 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CD7190D1C946F2E0027EEF2 /* submenu-swing-animationclub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "submenu-swing-animationclub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CD719101C946F2E0027EEF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CD719121C946F2E0027EEF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0CD719151C946F2E0027EEF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CD719171C946F2E0027EEF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CD7191A1C946F2E0027EEF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CD7191C1C946F2E0027EEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CD7190A1C946F2E0027EEF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CD719041C946F2E0027EEF2 = {
+			isa = PBXGroup;
+			children = (
+				0CD7190F1C946F2E0027EEF2 /* submenu-swing-animationclub */,
+				0CD7190E1C946F2E0027EEF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CD7190E1C946F2E0027EEF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CD7190D1C946F2E0027EEF2 /* submenu-swing-animationclub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CD7190F1C946F2E0027EEF2 /* submenu-swing-animationclub */ = {
+			isa = PBXGroup;
+			children = (
+				0CD719101C946F2E0027EEF2 /* AppDelegate.swift */,
+				0CD719121C946F2E0027EEF2 /* ViewController.swift */,
+				0CD719141C946F2E0027EEF2 /* Main.storyboard */,
+				0CD719171C946F2E0027EEF2 /* Assets.xcassets */,
+				0CD719191C946F2E0027EEF2 /* LaunchScreen.storyboard */,
+				0CD7191C1C946F2E0027EEF2 /* Info.plist */,
+			);
+			path = "submenu-swing-animationclub";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CD7190C1C946F2E0027EEF2 /* submenu-swing-animationclub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CD7191F1C946F2E0027EEF2 /* Build configuration list for PBXNativeTarget "submenu-swing-animationclub" */;
+			buildPhases = (
+				0CD719091C946F2E0027EEF2 /* Sources */,
+				0CD7190A1C946F2E0027EEF2 /* Frameworks */,
+				0CD7190B1C946F2E0027EEF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "submenu-swing-animationclub";
+			productName = "submenu-swing-animationclub";
+			productReference = 0CD7190D1C946F2E0027EEF2 /* submenu-swing-animationclub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CD719051C946F2E0027EEF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wingchi;
+				TargetAttributes = {
+					0CD7190C1C946F2E0027EEF2 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 0CD719081C946F2E0027EEF2 /* Build configuration list for PBXProject "submenu-swing-animationclub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CD719041C946F2E0027EEF2;
+			productRefGroup = 0CD7190E1C946F2E0027EEF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CD7190C1C946F2E0027EEF2 /* submenu-swing-animationclub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CD7190B1C946F2E0027EEF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD7191B1C946F2E0027EEF2 /* LaunchScreen.storyboard in Resources */,
+				0CD719181C946F2E0027EEF2 /* Assets.xcassets in Resources */,
+				0CD719161C946F2E0027EEF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CD719091C946F2E0027EEF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD719131C946F2E0027EEF2 /* ViewController.swift in Sources */,
+				0CD719111C946F2E0027EEF2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0CD719141C946F2E0027EEF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CD719151C946F2E0027EEF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CD719191C946F2E0027EEF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CD7191A1C946F2E0027EEF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CD7191D1C946F2E0027EEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CD7191E1C946F2E0027EEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CD719201C946F2E0027EEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "submenu-swing-animationclub/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.wingchi.submenu-swing-animationclub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0CD719211C946F2E0027EEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "submenu-swing-animationclub/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.wingchi.submenu-swing-animationclub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CD719081C946F2E0027EEF2 /* Build configuration list for PBXProject "submenu-swing-animationclub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CD7191D1C946F2E0027EEF2 /* Debug */,
+				0CD7191E1C946F2E0027EEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CD7191F1C946F2E0027EEF2 /* Build configuration list for PBXNativeTarget "submenu-swing-animationclub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CD719201C946F2E0027EEF2 /* Debug */,
+				0CD719211C946F2E0027EEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CD719051C946F2E0027EEF2 /* Project object */;
+}
