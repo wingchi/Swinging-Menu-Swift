@@ -19,32 +19,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYh-2F-9lD">
-                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRi-Bx-u0i">
-                                        <rect key="frame" x="285" y="85" width="30" height="30"/>
-                                        <state key="normal" title="+"/>
-                                        <connections>
-                                            <action selector="plusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJp-Pi-E2H"/>
-                                        </connections>
-                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DaenerysBottom" translatesAutoresizingMaskIntoConstraints="NO" id="zis-5A-h4U">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="dRi-Bx-u0i" firstAttribute="centerX" secondItem="ZYh-2F-9lD" secondAttribute="centerX" id="Ic7-BA-ghq"/>
-                                    <constraint firstItem="dRi-Bx-u0i" firstAttribute="centerY" secondItem="ZYh-2F-9lD" secondAttribute="centerY" id="XIM-el-Dgh"/>
+                                    <constraint firstAttribute="trailing" secondItem="zis-5A-h4U" secondAttribute="trailing" id="GNk-AD-OcH"/>
+                                    <constraint firstAttribute="bottom" secondItem="zis-5A-h4U" secondAttribute="bottom" id="Jp5-Cz-AcP"/>
+                                    <constraint firstItem="zis-5A-h4U" firstAttribute="leading" secondItem="ZYh-2F-9lD" secondAttribute="leading" id="QY1-W6-7n4"/>
+                                    <constraint firstItem="zis-5A-h4U" firstAttribute="top" secondItem="ZYh-2F-9lD" secondAttribute="top" id="d4g-Dn-fAT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXP-i3-DgJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DaenerysTop" translatesAutoresizingMaskIntoConstraints="NO" id="Hen-oT-r0o">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRb-Cb-jhm">
+                                        <rect key="frame" x="285" y="550" width="30" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="expandButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQr-Cx-3gR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Hen-oT-r0o" secondAttribute="bottom" id="67F-iQ-RzJ"/>
+                                    <constraint firstItem="NRb-Cb-jhm" firstAttribute="centerX" secondItem="xXP-i3-DgJ" secondAttribute="centerX" id="AKM-p2-gez"/>
+                                    <constraint firstItem="Hen-oT-r0o" firstAttribute="top" secondItem="xXP-i3-DgJ" secondAttribute="top" id="IUq-6B-12s"/>
+                                    <constraint firstItem="Hen-oT-r0o" firstAttribute="leading" secondItem="xXP-i3-DgJ" secondAttribute="leading" id="Q9N-e5-bX3"/>
+                                    <constraint firstAttribute="bottom" secondItem="NRb-Cb-jhm" secondAttribute="bottom" constant="8" id="U17-np-2JM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hen-oT-r0o" secondAttribute="trailing" id="jdQ-oM-AQt"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ZYh-2F-9lD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rjv-S7-YPy"/>
-                            <constraint firstItem="ZYh-2F-9lD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.333" id="Uwc-Yo-rBz"/>
+                            <constraint firstAttribute="trailing" secondItem="xXP-i3-DgJ" secondAttribute="trailing" id="TaA-tY-QmD"/>
+                            <constraint firstItem="ZYh-2F-9lD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="Uwc-Yo-rBz"/>
+                            <constraint firstItem="xXP-i3-DgJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ve5-t1-Nnf"/>
+                            <constraint firstItem="xXP-i3-DgJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kou-DH-Qg5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xXP-i3-DgJ" secondAttribute="bottom" id="mV3-6J-uQS"/>
                             <constraint firstAttribute="trailing" secondItem="ZYh-2F-9lD" secondAttribute="trailing" id="vZ1-ki-k2z"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZYh-2F-9lD" secondAttribute="bottom" id="xih-mL-8De"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="mainMenuView" destination="xXP-i3-DgJ" id="kgH-AM-J0y"/>
                         <outlet property="submenuView" destination="ZYh-2F-9lD" id="gv4-xu-mgP"/>
                     </connections>
                 </viewController>
@@ -53,4 +81,8 @@
             <point key="canvasLocation" x="419" y="458"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DaenerysBottom" width="459" height="368"/>
+        <image name="DaenerysTop" width="459" height="736"/>
+    </resources>
 </document>

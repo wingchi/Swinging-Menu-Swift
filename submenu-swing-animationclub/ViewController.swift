@@ -14,8 +14,10 @@ enum RotationAxis {
 
 final class ViewController: UIViewController {
 
+    @IBOutlet weak var mainMenuView: UIView!
     @IBOutlet weak var submenuView: UIView!
-//    private let submenuView = UIView(frame: CGRect(x: 0, y: 300, width: 300, height: 300))
+
+    var submenuExpanded = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,16 +27,13 @@ final class ViewController: UIViewController {
         let viewWidth = view.frame.width
         let viewHeight = view.frame.height
         
-        submenuView.backgroundColor = UIColor.grayColor()
-        submenuView.frame = CGRect(x: 0, y: (2 / 3) * viewHeight, width: viewWidth, height: viewHeight/3)
-        
-        setAnchorPoint(CGPoint(x: 0.0, y: 0.5), forView: submenuView)
-        animate3DRotation(fromDegrees: -90.0, toDegrees: 0.0, rotationAxis: .Y, forView: submenuView)
+        submenuView.frame = CGRect(x: 0, y: viewHeight / 2, width: viewWidth, height: viewHeight / 2)
     }
     
-    @IBAction func plusButtonPressed(sender: UIButton) {
-        setAnchorPoint(CGPoint(x: 1.0, y: 0.5), forView: submenuView)
-        animate3DRotation(fromDegrees: 0.0, toDegrees: 90.0, rotationAxis: .Y, forView: submenuView)
+    
+    @IBAction func expandButtonPressed(sender: UIButton) {
+        toggleMainMenu()
+        toggleSubMenu()
     }
     
     private func animate3DRotation(fromDegrees from: Double, toDegrees to: Double, rotationAxis: RotationAxis, forView view: UIView) {
@@ -45,10 +44,7 @@ final class ViewController: UIViewController {
         var x: CGFloat = 0.0
         var y: CGFloat = 0.0
         var z: CGFloat = 0.0
-        
-        // the keyPath is the property we are animating
-        let keyPath: String = "transform"
-        
+
         fromTransform.m34 = 1.0 / 1000.0
         toTransform.m34 = 1.0 / 1000.0
         
@@ -67,13 +63,47 @@ final class ViewController: UIViewController {
         fromTransform = CATransform3DRotate(fromTransform, CGFloat(from * M_PI / 180), x, y, z)
         toTransform = CATransform3DRotate(toTransform, CGFloat(to * M_PI / 180), x, y, z)
         
-        let animation = CABasicAnimation(keyPath: keyPath)
+        // the keyPath is the property we are animating
+        let animation = CABasicAnimation(keyPath: "transform")
         animation.fromValue = NSValue(CATransform3D: fromTransform)
-        animation.duration = 1
-        animation.fillMode = kCAFillModeForwards
+        animation.toValue = NSValue(CATransform3D: toTransform)
+        animation.duration = 0.7
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         view.layer.transform = toTransform
         
-        view.layer.addAnimation(animation, forKey: keyPath)
+        view.layer.addAnimation(animation, forKey: "swing")
+    }
+    
+    private func toggleMainMenu() {
+        
+        let options: UIViewAnimationOptions = submenuExpanded ? .CurveEaseOut : .CurveEaseIn
+        let transform = submenuExpanded ? CGAffineTransformIdentity : CGAffineTransformMakeTranslation(0.0, -mainMenuView.frame.height / 2)
+        
+        UIView.animateWithDuration(
+            1.0,
+            delay: 0.0,
+            options: options,
+            animations: {
+                self.mainMenuView.transform = transform
+            },
+            completion: { completed in
+                if completed {
+                    self.submenuExpanded = !self.submenuExpanded
+                }
+            }
+        )
+    }
+    
+    private func toggleSubMenu() {
+        
+        if submenuExpanded {
+            setAnchorPoint(CGPoint(x: 1.0, y: 0.5), forView: submenuView)
+            animate3DRotation(fromDegrees: 0.0, toDegrees: 90.0, rotationAxis: .Y, forView: submenuView)
+        } else {
+            setAnchorPoint(CGPoint(x: 0.0, y: 0.5), forView: submenuView)
+            animate3DRotation(fromDegrees: -90.0, toDegrees: 0.0, rotationAxis: .Y, forView: submenuView)
+
+        }
     }
     
     // method from codepath on Github https://github.com/codepath/ios_guides/wiki/Using-Perspective-Transforms
